@@ -67,11 +67,11 @@ static const int GRID_COLUMNS = 10;
     }
 }
 
-- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+- (void)touchBegan:(CCTouch *)touch withEvent:(UIEvent *)event
 {
     //get the x,y coordinates of the touch
-    CGPoint touchLocation = [touch locationInView:touch.view];
-    //CGPoint touchLocation = [touch locationInNode:self];
+    //CGPoint touchLocation = [touch locationInView: self];
+    CGPoint touchLocation = [touch locationInNode:self];
     
     //get the Creature at that location
     Creature *creature = [self creatureForTouchPosition:touchLocation];
