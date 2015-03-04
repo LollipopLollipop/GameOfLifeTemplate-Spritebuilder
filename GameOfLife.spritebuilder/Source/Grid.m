@@ -173,7 +173,7 @@ static const int GRID_COLUMNS = 10;
                 currentCreature.isAlive = FALSE;
             
             if(currentCreature.isAlive==TRUE)
-               numAlive++; 
+               numAlive++;
             
         }
     }
