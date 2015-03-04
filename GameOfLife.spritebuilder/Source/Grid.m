@@ -167,10 +167,13 @@ static const int GRID_COLUMNS = 10;
             //check if the Creature's livingNeighbors property is set to 3
             if(currentCreature.livingNeighbors == 3){
                 currentCreature.isAlive = TRUE;
-                numAlive++;
+                //numAlive++;
             }
             else if(currentCreature.livingNeighbors<=1 || currentCreature.livingNeighbors>=4)
                 currentCreature.isAlive = FALSE;
+            
+            if(currentCreature.isAlive==TRUE)
+               numAlive++; 
             
         }
     }
